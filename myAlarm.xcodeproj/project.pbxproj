@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		F7C2038C2131AD3400C3FC77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2038B2131AD3400C3FC77 /* AppDelegate.swift */; };
-		F7C203912131AD3400C3FC77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C2038F2131AD3400C3FC77 /* Main.storyboard */; };
 		F7C203932131AD3400C3FC77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C203922131AD3400C3FC77 /* Assets.xcassets */; };
 		F7C203962131AD3400C3FC77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C203942131AD3400C3FC77 /* LaunchScreen.storyboard */; };
+		FCC180CF233943AB00A52364 /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC180CE233943AB00A52364 /* AlarmListTableViewController.swift */; };
+		FCC180D1233943CB00A52364 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC180D0233943CB00A52364 /* main.storyboard */; };
+		FCC180D32339453E00A52364 /* AlarmDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC180D22339453E00A52364 /* AlarmDetailTableViewController.swift */; };
+		FCC180DD23394CE500A52364 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC180DC23394CE500A52364 /* SwitchTableViewCell.swift */; };
+		FCC180E2233953A900A52364 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC180E1233953A900A52364 /* Alarm.swift */; };
+		FCC180E423395FD900A52364 /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC180E323395FD900A52364 /* AlarmController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F7C203882131AD3400C3FC77 /* myAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C2038B2131AD3400C3FC77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7C203902131AD3400C3FC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7C203922131AD3400C3FC77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7C203952131AD3400C3FC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7C203972131AD3400C3FC77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC180CE233943AB00A52364 /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
+		FCC180D0233943CB00A52364 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		FCC180D22339453E00A52364 /* AlarmDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailTableViewController.swift; sourceTree = "<group>"; };
+		FCC180DC23394CE500A52364 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwitchTableViewCell.swift; path = "myAlarm/Controllers/View Controllers/SwitchTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		FCC180E1233953A900A52364 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		FCC180E323395FD900A52364 /* AlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,45 +62,82 @@
 		F7C2038A2131AD3400C3FC77 /* myAlarm */ = {
 			isa = PBXGroup;
 			children = (
-				F7C203AA2131B1F600C3FC77 /* Resources */,
-				F7C203A92131B1E300C3FC77 /* Views */,
-				F7C203A72131B1D500C3FC77 /* Models */,
+				FCC180E02339537F00A52364 /* Models */,
 				F7C203A82131B1DB00C3FC77 /* Controllers */,
+				FCC180D92339465F00A52364 /* Views */,
+				F7C203AA2131B1F600C3FC77 /* Resources */,
 			);
 			path = myAlarm;
-			sourceTree = "<group>";
-		};
-		F7C203A72131B1D500C3FC77 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		F7C203A82131B1DB00C3FC77 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FCC180E52339605200A52364 /* Model Controllers */,
+				FCC180CD2339437600A52364 /* View Controllers */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F7C203A92131B1E300C3FC77 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		F7C203AA2131B1F600C3FC77 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				F7C2038B2131AD3400C3FC77 /* AppDelegate.swift */,
-				F7C2038F2131AD3400C3FC77 /* Main.storyboard */,
 				F7C203922131AD3400C3FC77 /* Assets.xcassets */,
 				F7C203942131AD3400C3FC77 /* LaunchScreen.storyboard */,
 				F7C203972131AD3400C3FC77 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FCC180CD2339437600A52364 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCC180CE233943AB00A52364 /* AlarmListTableViewController.swift */,
+				FCC180D22339453E00A52364 /* AlarmDetailTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FCC180D82339465300A52364 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FCC180D0233943CB00A52364 /* main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FCC180D92339465F00A52364 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCC180DA23394C7600A52364 /* Custom Views */,
+				FCC180D82339465300A52364 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCC180DA23394C7600A52364 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCC180DC23394CE500A52364 /* SwitchTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		FCC180E02339537F00A52364 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCC180E1233953A900A52364 /* Alarm.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCC180E52339605200A52364 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCC180E323395FD900A52364 /* AlarmController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7C203962131AD3400C3FC77 /* LaunchScreen.storyboard in Resources */,
+				FCC180D1233943CB00A52364 /* main.storyboard in Resources */,
 				F7C203932131AD3400C3FC77 /* Assets.xcassets in Resources */,
-				F7C203912131AD3400C3FC77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,21 +211,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC180D32339453E00A52364 /* AlarmDetailTableViewController.swift in Sources */,
+				FCC180DD23394CE500A52364 /* SwitchTableViewCell.swift in Sources */,
+				FCC180E2233953A900A52364 /* Alarm.swift in Sources */,
 				F7C2038C2131AD3400C3FC77 /* AppDelegate.swift in Sources */,
+				FCC180CF233943AB00A52364 /* AlarmListTableViewController.swift in Sources */,
+				FCC180E423395FD900A52364 /* AlarmController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F7C2038F2131AD3400C3FC77 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7C203902131AD3400C3FC77 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F7C203942131AD3400C3FC77 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
